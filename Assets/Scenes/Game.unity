@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 148791688}
   - component: {fileID: 148791687}
   - component: {fileID: 148791686}
+  - component: {fileID: 148791690}
   m_Layer: 0
   m_Name: MainCamera
   m_TagString: MainCamera
@@ -232,13 +233,32 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 148791685}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -5}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 5, z: -5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1818360608 &148791690
+PositionConstraint:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 148791685}
+  m_Enabled: 1
+  m_Weight: 1
+  m_TranslationAtRest: {x: 0, y: 5, z: -5}
+  m_TranslationOffset: {x: 0, y: 5, z: -5}
+  m_AffectTranslationX: 1
+  m_AffectTranslationY: 1
+  m_AffectTranslationZ: 1
+  m_IsContraintActive: 1
+  m_IsLocked: 1
+  m_Sources:
+  - sourceTransform: {fileID: 1284491666}
+    weight: 1
 --- !u!1 &683682748
 GameObject:
   m_ObjectHideFlags: 0
@@ -250,7 +270,7 @@ GameObject:
   - component: {fileID: 683682749}
   - component: {fileID: 683682750}
   m_Layer: 0
-  m_Name: Center
+  m_Name: Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -350,8 +370,9 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 683682749}
+  - {fileID: 1377873012}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1284491667
 MonoBehaviour:
@@ -365,10 +386,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 087ebfb1f9cee1c4d9725a1210602c8c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  head: {fileID: 683682749}
   petalPrefab: {fileID: 6260209188918214604, guid: 717d5374f88864a48b7ff0ae04c59226, type: 3}
   numPetals: 8
   maxRadius: 0.7
   minRadius: 0.3
+  speed: 5
+  sun: {fileID: 1377873012}
   life: 0
 --- !u!1 &1377873011
 GameObject:
@@ -394,14 +418,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1377873011}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1406264787}
-  m_Father: {fileID: 0}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Father: {fileID: 1284491666}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!114 &1377873013
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -415,6 +439,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   angleSmoothTime: 0.1
+  angleLimit: 40
 --- !u!1 &1406264786
 GameObject:
   m_ObjectHideFlags: 0
@@ -426,7 +451,7 @@ GameObject:
   - component: {fileID: 1406264787}
   - component: {fileID: 1406264788}
   m_Layer: 0
-  m_Name: Sun
+  m_Name: SunSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
