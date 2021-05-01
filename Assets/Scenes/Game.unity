@@ -6606,6 +6606,10 @@ PrefabInstance:
       propertyPath: anchor
       value: 
       objectReference: {fileID: 550746739}
+    - target: {fileID: 5661673495813025793, guid: f3757a139c868854d8260969dfedb170, type: 3}
+      propertyPath: colliderCount
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 8520835968353833541, guid: f3757a139c868854d8260969dfedb170, type: 3}
       propertyPath: m_Name
       value: Worm

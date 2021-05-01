@@ -27,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 8520835968353833541}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 5, y: 5, z: 5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -49,6 +49,9 @@ MonoBehaviour:
   smoothTime: 0.5
   rotateRandomSpeed: 1080
   speed: 3
+  colliderDistance: 0.5
+  colliderCount: 7
+  colliderPrefab: {fileID: 5553651128072919532, guid: 08b692c9341df8144abb8a0b0fb3d2bd, type: 3}
 --- !u!96 &3233132670190713382
 TrailRenderer:
   serializedVersion: 2
