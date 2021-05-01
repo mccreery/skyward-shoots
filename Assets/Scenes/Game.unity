@@ -270,6 +270,7 @@ GameObject:
   - component: {fileID: 683682749}
   - component: {fileID: 683682750}
   - component: {fileID: 683682751}
+  - component: {fileID: 683682752}
   m_Layer: 0
   m_Name: Head
   m_TagString: Untagged
@@ -386,7 +387,7 @@ TrailRenderer:
   m_Time: 5
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 0.5
+    widthMultiplier: 1
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -434,12 +435,26 @@ TrailRenderer:
     numCornerVertices: 0
     numCapVertices: 0
     alignment: 0
-    textureMode: 0
+    textureMode: 3
     shadowBias: 0.5
     generateLightingData: 0
-  m_MinVertexDistance: 0.1
+  m_MinVertexDistance: 1
   m_Autodestruct: 0
   m_Emitting: 1
+--- !u!114 &683682752
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 683682748}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 547120a780c80454492d1b14d6a4e3e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scale: 1
+  material: {fileID: 0}
 --- !u!1 &1284491665
 GameObject:
   m_ObjectHideFlags: 0
