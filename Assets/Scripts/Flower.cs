@@ -7,6 +7,9 @@ public class Flower : MonoBehaviour
     public GameObject petalPrefab;
     public int numPetals = 8;
 
+    public float losePetalRate = 0.5f;
+    public float pickupAmount = 2.0f;
+
     public float maxRadius = 2;
     public float minRadius = 1;
 
@@ -17,9 +20,9 @@ public class Flower : MonoBehaviour
 
     [Min(0)]
     [SerializeField]
-    private int life;
+    private float life;
 
-    public int Life
+    public float Life
     {
         get
         {
@@ -30,7 +33,7 @@ public class Flower : MonoBehaviour
             life = value;
             for (int i = 0; i < petals.Count; i++)
             {
-                petals[i].SetActive(life > i);
+                petals[i].SetActive(life >= i);
             }
         }
     }
@@ -53,6 +56,8 @@ public class Flower : MonoBehaviour
     {
         transform.position += head.up * speed * Time.deltaTime;
         head.rotation = Quaternion.Euler(0, 0, sun.rotation.eulerAngles.z - 90);
+
+        Life -= losePetalRate * Time.deltaTime;
     }
 
     private GameObject GeneratePetal(int i)
@@ -64,5 +69,14 @@ public class Flower : MonoBehaviour
         GameObject petal = Instantiate(petalPrefab, petalPosition, Quaternion.Euler(0, 0, degrees), head);
 
         return petal;
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("WateringCan"))
+        {
+            Life += pickupAmount;
+            Destroy(collision.gameObject);
+        }
     }
 }

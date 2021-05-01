@@ -319,6 +319,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4109549584855946857}
   - component: {fileID: 4109549584855946856}
+  - component: {fileID: 2070704990216594045}
+  - component: {fileID: 1359002318384904032}
   m_Layer: 0
   m_Name: Flower
   m_TagString: Untagged
@@ -357,8 +359,47 @@ MonoBehaviour:
   head: {fileID: 4109549583317513286}
   petalPrefab: {fileID: 6260209188918214604, guid: 717d5374f88864a48b7ff0ae04c59226, type: 3}
   numPetals: 8
+  losePetalRate: 0.5
+  pickupAmount: 2
   maxRadius: 0.7
   minRadius: 0.3
   speed: 5
   sun: {fileID: 4109549584561091471}
   life: 0
+--- !u!58 &2070704990216594045
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4109549584855946858}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 1
+--- !u!50 &1359002318384904032
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4109549584855946858}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0

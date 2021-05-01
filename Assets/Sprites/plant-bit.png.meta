@@ -14,6 +14,9 @@ TextureImporter:
   - first:
       213: -8724185195775200312
     second: Sun
+  - first:
+      213: 6693218365338926740
+    second: Watering-can
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -230,6 +233,27 @@ TextureImporter:
       bones: []
       spriteID: 8c3f81389c77de680800000000000000
       internalID: -8724185195775200312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Watering-can
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 45
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49eb52e14a613ec50800000000000000
+      internalID: 6693218365338926740
       vertices: []
       indices: 
       edges: []
