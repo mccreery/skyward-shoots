@@ -45,7 +45,8 @@ SpriteAtlas:
     packables:
     - {fileID: 2800000, guid: 8de1fec13e470d24a800f5d994ec2f83, type: 3}
     - {fileID: 2800000, guid: 0b0ab0eb6e205de449013abd6d9a6ebf, type: 3}
-    totalSpriteSurfaceArea: 2146
+    - {fileID: 2800000, guid: 4c9449361c79a9449a3bffc9e31b3cb3, type: 3}
+    totalSpriteSurfaceArea: 3170
     bindAsDefault: 1
     isAtlasV2: 0
     cachedData: {fileID: 0}
@@ -56,6 +57,7 @@ SpriteAtlas:
   - {fileID: 6693218365338926740, guid: 8de1fec13e470d24a800f5d994ec2f83, type: 3}
   - {fileID: -8724185195775200312, guid: 8de1fec13e470d24a800f5d994ec2f83, type: 3}
   - {fileID: -5997317474316409295, guid: 8de1fec13e470d24a800f5d994ec2f83, type: 3}
+  - {fileID: 21300000, guid: 4c9449361c79a9449a3bffc9e31b3cb3, type: 3}
   - {fileID: 1807125615787039003, guid: 0b0ab0eb6e205de449013abd6d9a6ebf, type: 3}
   - {fileID: 349823833441268365, guid: 0b0ab0eb6e205de449013abd6d9a6ebf, type: 3}
   m_PackedSpriteNamesToIndex:
@@ -64,6 +66,7 @@ SpriteAtlas:
   - Watering-can
   - Sun
   - Center
+  - bird
   - Dirt
   - Grass
   m_RenderDataMap: {}
