@@ -425,6 +425,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5225540647096490458}
   - component: {fileID: 5266976302641741888}
+  - component: {fileID: 183734392083547080}
   m_Layer: 5
   m_Name: Slider
   m_TagString: Untagged
@@ -499,13 +500,39 @@ MonoBehaviour:
   m_FillRect: {fileID: 1861340532995700343}
   m_HandleRect: {fileID: 9174242693339151108}
   m_Direction: 0
-  m_MinValue: 0
-  m_MaxValue: 1
+  m_MinValue: -20
+  m_MaxValue: 0
   m_WholeNumbers: 0
-  m_Value: 0.509
+  m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 183734392083547080}
+        m_TargetAssemblyTypeName: Volume, Assembly-CSharp
+        m_MethodName: OnSliderChange
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &183734392083547080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1703053828456977621}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf8336992834e864b9a0f372789feaaf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioMixer: {fileID: 24100000, guid: f630b27d504cd7e4d9e65545fe025513, type: 2}
+  volumeSlider: {fileID: 5266976302641741888}
 --- !u!114 &2878075923481621544
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -518,7 +545,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fe78878ada30244d81cc27ba548d7cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneNumber: 0
+  sceneNumber: 1
 --- !u!1 &5294620981054985862
 GameObject:
   m_ObjectHideFlags: 0
@@ -832,7 +859,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 990235650413920230, guid: 1bfb2e570ea2a2b4c95a1a5dd5757c65, type: 3}
       propertyPath: m_Text
-      value: Controls
+      value: How To Play
       objectReference: {fileID: 0}
     - target: {fileID: 4993034274216006288, guid: 1bfb2e570ea2a2b4c95a1a5dd5757c65, type: 3}
       propertyPath: m_Name
