@@ -57,12 +57,19 @@ public class Flower : MonoBehaviour
         }
     }
 
+    private float angle;
+    private float angleVelocity;
+    public float angleSmoothTime = 0.5f;
+
     private void Update()
     {
         Vector2 sunDirection = sun.position - transform.position;
         float radians = Mathf.Atan2(sunDirection.y, sunDirection.x);
 
-        transform.rotation = Quaternion.Euler(0, 0, radians * Mathf.Rad2Deg - 90.0f);
+        float targetAngle = radians * Mathf.Rad2Deg - 90.0f;
+        angle = Mathf.SmoothDamp(angle, targetAngle, ref angleVelocity, angleSmoothTime);
+
+        transform.rotation = Quaternion.Euler(0, 0, angle);
         transform.position += transform.up * speed * Time.deltaTime;
 
         head.gameObject.SetActive(AboveGround);
