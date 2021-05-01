@@ -59,11 +59,12 @@ public class Flower : MonoBehaviour
 
     private void Update()
     {
-        Quaternion rotation = Quaternion.Euler(0, 0, sun.rotation.eulerAngles.z - 90);
-        head.rotation = rotation;
-        seed.rotation = rotation;
+        Vector2 sunDirection = sun.position - transform.position;
+        float radians = Mathf.Atan2(sunDirection.y, sunDirection.x);
 
-        transform.position += head.up * speed * Time.deltaTime;
+        transform.rotation = Quaternion.Euler(0, 0, radians * Mathf.Rad2Deg - 90.0f);
+        transform.position += transform.up * speed * Time.deltaTime;
+
         head.gameObject.SetActive(AboveGround);
         seed.gameObject.SetActive(!AboveGround);
 
