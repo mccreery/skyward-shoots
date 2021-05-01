@@ -4,6 +4,8 @@ using UnityEngine;
 public class Flower : MonoBehaviour
 {
     public Transform head;
+    public Transform seed;
+
     public GameObject petalPrefab;
     public int numPetals = 8;
 
@@ -15,6 +17,9 @@ public class Flower : MonoBehaviour
 
     public float speed = 1.0f;
     public Transform sun;
+
+    public float Altitude => transform.position.y;
+    public bool AboveGround => Altitude >= 0;
 
     private List<GameObject> petals = new List<GameObject>();
 
@@ -54,10 +59,18 @@ public class Flower : MonoBehaviour
 
     private void Update()
     {
-        transform.position += head.up * speed * Time.deltaTime;
-        head.rotation = Quaternion.Euler(0, 0, sun.rotation.eulerAngles.z - 90);
+        Quaternion rotation = Quaternion.Euler(0, 0, sun.rotation.eulerAngles.z - 90);
+        head.rotation = rotation;
+        seed.rotation = rotation;
 
-        Life -= losePetalRate * Time.deltaTime;
+        transform.position += head.up * speed * Time.deltaTime;
+        head.gameObject.SetActive(AboveGround);
+        seed.gameObject.SetActive(!AboveGround);
+
+        if (AboveGround)
+        {
+            Life -= losePetalRate * Time.deltaTime;
+        }
     }
 
     private GameObject GeneratePetal(int i)
@@ -66,7 +79,9 @@ public class Flower : MonoBehaviour
         float radians = degrees * Mathf.Deg2Rad;
 
         Vector2 petalPosition = new Vector2(maxRadius * Mathf.Cos(radians), minRadius * Mathf.Sin(radians));
-        GameObject petal = Instantiate(petalPrefab, petalPosition, Quaternion.Euler(0, 0, degrees), head);
+        GameObject petal = Instantiate(petalPrefab, head);
+        petal.transform.localPosition = petalPosition;
+        petal.transform.localRotation = Quaternion.Euler(0, 0, degrees);
 
         return petal;
     }
