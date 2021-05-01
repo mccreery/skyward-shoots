@@ -50,7 +50,7 @@ MonoBehaviour:
   rotateRandomSpeed: 1080
   speed: 3
   colliderDistance: 0.5
-  colliderCount: 7
+  colliderCount: 6
   colliderPrefab: {fileID: 5553651128072919532, guid: 08b692c9341df8144abb8a0b0fb3d2bd, type: 3}
 --- !u!96 &3233132670190713382
 TrailRenderer:
