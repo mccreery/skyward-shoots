@@ -16,4 +16,4 @@ public class Preload : MonoBehaviour
         DontDestroyOnLoad(transform.gameObject);
         SceneManager.LoadScene(1);
     }
-}    
+}
