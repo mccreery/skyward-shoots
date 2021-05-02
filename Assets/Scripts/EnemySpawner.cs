@@ -43,7 +43,7 @@ public class EnemySpawner : MonoBehaviour
         if (nextSpawnPosition.y < worldSpawnLine)
         {
             EnemySet enemySet = GetEnemySet(nextSpawnPosition.y);
-            Instantiate(enemySet.prefabs[Random.Range(0, enemySet.prefabs.Length)], nextSpawnPosition, Quaternion.identity);
+            Instantiate(enemySet.RandomChoice(), nextSpawnPosition, Quaternion.identity);
             nextSpawnPosition = GenerateSpawnPosition();
         }
     }
