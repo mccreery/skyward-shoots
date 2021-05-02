@@ -332,7 +332,7 @@ MonoBehaviour:
   minRadius: 0.3
   speed: 5
   sun: {fileID: 0}
-  iframeTime: 2
+  iframeTime: 1
   sprites:
   - {fileID: 7184683927112244500}
   - {fileID: 4109549583317513285}

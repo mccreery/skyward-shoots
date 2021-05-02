@@ -203,7 +203,7 @@ public class Flower : MonoBehaviour
             disableRainTime = Time.time + rainTime;
         }
 
-        if (Time.time > vulnerableTime && collision.CompareTag("Bee") || collision.CompareTag("Bird") || collision.CompareTag("Worm"))
+        if (Time.time > vulnerableTime && (collision.CompareTag("Bee") || collision.CompareTag("Bird") || collision.CompareTag("Worm")))
         {
             audioSource.PlayOneShot(damage);
             Life -= damageAmount;
