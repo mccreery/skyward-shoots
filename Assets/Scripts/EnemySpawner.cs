@@ -47,10 +47,13 @@ public class EnemySpawner : MonoBehaviour
 
     private void OnDrawGizmosSelected()
     {
-        Rect worldQueueArea = WorldQueueArea;
-        Handles.DrawWireCube(WorldQueueArea.center, WorldQueueArea.size);
+        if (spawnAnchor != null)
+        {
+            Rect worldQueueArea = WorldQueueArea;
+            Handles.DrawWireCube(WorldQueueArea.center, WorldQueueArea.size);
 
-        float worldSpawnLine = spawnAnchor.position.y + spawnLine;
-        Handles.DrawLine(new Vector2(spawnAnchor.position.x - 20, worldSpawnLine), new Vector2(spawnAnchor.position.x + 20, worldSpawnLine));
+            float worldSpawnLine = spawnAnchor.position.y + spawnLine;
+            Handles.DrawLine(new Vector2(spawnAnchor.position.x - 20, worldSpawnLine), new Vector2(spawnAnchor.position.x + 20, worldSpawnLine));
+        }
     }
 }

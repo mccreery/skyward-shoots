@@ -71,6 +71,9 @@ public class Worm : MonoBehaviour
 
     private void OnDrawGizmosSelected()
     {
-        Handles.DrawWireDisc(anchor.position, Vector3.forward, radius);
+        if (anchor != null)
+        {
+            Handles.DrawWireDisc(anchor.position, Vector3.forward, radius);
+        }
     }
 }
