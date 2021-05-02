@@ -6,6 +6,8 @@ public class Flower : MonoBehaviour
 {
     public Text finalScoreText;
     public Text pausedText;
+    public GameObject pausePanel;
+    public GameObject gameOverPanel;
     public Score score;
     public Button playAgain;
     public Button mainMenu;
@@ -95,6 +97,8 @@ public class Flower : MonoBehaviour
         playAgain.gameObject.SetActive(false);
         mainMenu.gameObject.SetActive(false);
 
+        gameOverPanel.gameObject.SetActive(false);
+        pausePanel.gameObject.SetActive(false);
         pausedText.gameObject.SetActive(false);
         continueGame.gameObject.SetActive(false);
         quitToMenu.gameObject.SetActive(false);
@@ -170,6 +174,7 @@ public class Flower : MonoBehaviour
     private void PauseGame()
     {
         Time.timeScale = 0;
+        pausePanel.gameObject.SetActive(true);
         pausedText.gameObject.SetActive(true);
         continueGame.gameObject.SetActive(true);
         quitToMenu.gameObject.SetActive(true);
@@ -178,6 +183,7 @@ public class Flower : MonoBehaviour
     private void Die()
     {
         finalScoreText.text = "Game Over!\nYour flower reached a height of:\n" + score.Altitude + "ft";
+        gameOverPanel.gameObject.SetActive(true);
         finalScoreText.gameObject.SetActive(true);
         playAgain.gameObject.SetActive(true);
         mainMenu.gameObject.SetActive(true);
