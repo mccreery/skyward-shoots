@@ -1,5 +1,8 @@
+using System;
 using UnityEditor;
 using UnityEngine;
+
+using Random = UnityEngine.Random;
 
 public class EnemySpawner : MonoBehaviour
 {
@@ -7,7 +10,6 @@ public class EnemySpawner : MonoBehaviour
     public Rect queueArea;
     public float spawnLine;
 
-    public EnemySet enemySet;
     private Vector2 nextSpawnPosition;
 
     private Rect WorldQueueArea
@@ -40,6 +42,7 @@ public class EnemySpawner : MonoBehaviour
 
         if (nextSpawnPosition.y < worldSpawnLine)
         {
+            EnemySet enemySet = GetEnemySet(nextSpawnPosition.y);
             Instantiate(enemySet.prefabs[Random.Range(0, enemySet.prefabs.Length)], nextSpawnPosition, Quaternion.identity);
             nextSpawnPosition = GenerateSpawnPosition();
         }
@@ -55,5 +58,26 @@ public class EnemySpawner : MonoBehaviour
             float worldSpawnLine = spawnAnchor.position.y + spawnLine;
             Handles.DrawLine(new Vector2(spawnAnchor.position.x - 20, worldSpawnLine), new Vector2(spawnAnchor.position.x + 20, worldSpawnLine));
         }
+    }
+
+    [Serializable]
+    public struct Stop
+    {
+        public float height;
+        public EnemySet enemySet;
+    }
+
+    public Stop[] stops;
+
+    private EnemySet GetEnemySet(float height)
+    {
+        for (int i = stops.Length - 1; i >= 0; i--)
+        {
+            if (height > stops[i].height)
+            {
+                return stops[i].enemySet;
+            }
+        }
+        return stops[0].enemySet;
     }
 }

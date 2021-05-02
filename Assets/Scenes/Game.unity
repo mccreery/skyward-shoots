@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.12731749, g: 0.13414757, b: 0.1210787, a: 1}
+  m_IndirectSpecularColor: {r: 0.12731713, g: 0.13414736, b: 0.12107852, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -14637,7 +14637,9 @@ MonoBehaviour:
     width: 30
     height: 10
   spawnLine: 30
-  enemySet: {fileID: 11400000, guid: a13c98ce7cf89d848bb8c9e48a19c75f, type: 2}
+  stops:
+  - height: -Infinity
+    enemySet: {fileID: 11400000, guid: a13c98ce7cf89d848bb8c9e48a19c75f, type: 2}
 --- !u!224 &3106939699931156937
 RectTransform:
   m_ObjectHideFlags: 0
