@@ -36,7 +36,26 @@ public class Flower : MonoBehaviour
     public float Altitude => transform.position.y;
     public bool AboveGround => Altitude >= 0;
 
+    public float iframeTime;
+    private float vulnerableTime;
+
     private List<GameObject> petals = new List<GameObject>();
+
+    public List<Renderer> sprites;
+
+    private List<Renderer> SpritesToFlash
+    {
+        get
+        {
+            List<Renderer> sprites = new List<Renderer>();
+            sprites.AddRange(sprites);
+            foreach (GameObject petal in petals)
+            {
+                sprites.Add(petal.GetComponentInChildren<Renderer>());
+            }
+            return sprites;
+        }
+    }
 
     [Min(0)]
     [SerializeField]
@@ -118,6 +137,28 @@ public class Flower : MonoBehaviour
         {
             Raining = false;
         }
+
+        UpdateFlash();
+    }
+
+    private void UpdateFlash()
+    {
+        bool flashOn;
+        if (Time.time < vulnerableTime)
+        {
+            // Flash
+            flashOn = Mathf.Repeat(Time.time, 0.1f) < 0.05f;
+        }
+        else
+        {
+            // Don't flash
+            flashOn = true;
+        }
+
+        foreach (Renderer renderer in SpritesToFlash)
+        {
+            renderer.enabled = flashOn;
+        }
     }
 
     private void PauseGame()
@@ -162,10 +203,11 @@ public class Flower : MonoBehaviour
             disableRainTime = Time.time + rainTime;
         }
 
-        if (collision.CompareTag("Bee") || collision.CompareTag("Bird"))
+        if (Time.time > vulnerableTime && collision.CompareTag("Bee") || collision.CompareTag("Bird"))
         {
             audioSource.PlayOneShot(damage);
             Life -= damageAmount;
+            vulnerableTime = Time.time + iframeTime;
         }
     }
 
