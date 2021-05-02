@@ -5,9 +5,12 @@ using UnityEngine.UI;
 public class Flower : MonoBehaviour
 {
     public Text finalScoreText;
+    public Text pausedText;
     public Score score;
     public Button playAgain;
     public Button mainMenu;
+    public Button continueGame;
+    public Button quitToMenu;
 
     public Transform head;
     public Transform seed;
@@ -60,6 +63,11 @@ public class Flower : MonoBehaviour
         finalScoreText.gameObject.SetActive(false);
         playAgain.gameObject.SetActive(false);
         mainMenu.gameObject.SetActive(false);
+
+        pausedText.gameObject.SetActive(false);
+        continueGame.gameObject.SetActive(false);
+        quitToMenu.gameObject.SetActive(false);
+
         life = numPetals;
         for (int i = 0; i < numPetals; i++)
         {
@@ -94,6 +102,19 @@ public class Flower : MonoBehaviour
             }
             Life -= losePetalRate * Time.deltaTime;
         }
+
+        if (Input.GetKeyDown("escape"))
+        {
+            PauseGame();
+        }
+    }
+
+    private void PauseGame()
+    {
+        Time.timeScale = 0;
+        pausedText.gameObject.SetActive(true);
+        continueGame.gameObject.SetActive(true);
+        quitToMenu.gameObject.SetActive(true);
     }
 
     private void Die()
