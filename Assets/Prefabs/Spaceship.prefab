@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1172918336974125170}
   - component: {fileID: 887550770617778331}
   - component: {fileID: 4894975285771133649}
+  - component: {fileID: 5439307401443367296}
   m_Layer: 0
   m_Name: Spaceship
   m_TagString: Bird
@@ -119,3 +120,18 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 1.7
+--- !u!114 &5439307401443367296
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3820142022523071860}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a28ea58b0503b6446a7fc09f5235f0fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  acceleration: 8
+  maxSpeed: 10
+  rotationScale: 3
