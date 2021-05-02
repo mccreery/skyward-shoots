@@ -110,6 +110,11 @@ public class Flower : MonoBehaviour
         {
             PauseGame();
         }
+
+        if (Time.time > disableRainTime)
+        {
+            Raining = false;
+        }
     }
 
     private void PauseGame()
@@ -149,6 +154,24 @@ public class Flower : MonoBehaviour
             audioSource.PlayOneShot(wateringCan);
             Life += pickupAmount;
             Destroy(collision.gameObject);
+
+            Raining = true;
+            disableRainTime = Time.time + rainTime;
+        }
+    }
+
+    public AnimateRain[] rains;
+    private float disableRainTime;
+    public float rainTime = 2;
+
+    private bool Raining
+    {
+        set
+        {
+            foreach (AnimateRain rain in rains)
+            {
+                rain.showRain = value;
+            }
         }
     }
 }

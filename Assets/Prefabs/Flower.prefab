@@ -332,6 +332,8 @@ MonoBehaviour:
   sun: {fileID: 0}
   life: 0
   angleSmoothTime: 0.5
+  rains: []
+  rainTime: 4
 --- !u!58 &2070704990216594045
 CircleCollider2D:
   m_ObjectHideFlags: 0

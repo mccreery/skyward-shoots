@@ -123,6 +123,17 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &96601582 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4376070572179795139, guid: fc81ef1af30a07a49ae9ada00862a99e, type: 3}
+  m_PrefabInstance: {fileID: 1493307909}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 989c965bc299f6f4bbb495e0c97922a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &148791685
 GameObject:
   m_ObjectHideFlags: 0
@@ -14398,6 +14409,10 @@ PrefabInstance:
       propertyPath: color.r
       value: 0.4575472
       objectReference: {fileID: 0}
+    - target: {fileID: 4376070572179795139, guid: fc81ef1af30a07a49ae9ada00862a99e, type: 3}
+      propertyPath: showRain
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4376070572179795164, guid: fc81ef1af30a07a49ae9ada00862a99e, type: 3}
       propertyPath: m_Color.g
       value: 0.8098694
@@ -14560,6 +14575,17 @@ MonoBehaviour:
   backgroundStartPoint: 65
   cameraEndPoint: 500
   backgroundEndPoint: -65
+--- !u!114 &1688506373 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4376070572179795139, guid: fc81ef1af30a07a49ae9ada00862a99e, type: 3}
+  m_PrefabInstance: {fileID: 4376070571940151027}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 989c965bc299f6f4bbb495e0c97922a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2000512597
 GameObject:
   m_ObjectHideFlags: 0
@@ -14678,6 +14704,18 @@ PrefabInstance:
       propertyPath: finalScoreText
       value: 
       objectReference: {fileID: 4288883470535698983}
+    - target: {fileID: 4109549584855946856, guid: 2d3131a326515d84e91b19d71d6663f7, type: 3}
+      propertyPath: rains.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4109549584855946856, guid: 2d3131a326515d84e91b19d71d6663f7, type: 3}
+      propertyPath: rains.Array.data[0]
+      value: 
+      objectReference: {fileID: 1688506373}
+    - target: {fileID: 4109549584855946856, guid: 2d3131a326515d84e91b19d71d6663f7, type: 3}
+      propertyPath: rains.Array.data[1]
+      value: 
+      objectReference: {fileID: 96601582}
     - target: {fileID: 4109549584855946857, guid: 2d3131a326515d84e91b19d71d6663f7, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -14782,6 +14820,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 148791689}
     m_Modifications:
+    - target: {fileID: 4376070572179795139, guid: fc81ef1af30a07a49ae9ada00862a99e, type: 3}
+      propertyPath: showRain
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4376070572179795165, guid: fc81ef1af30a07a49ae9ada00862a99e, type: 3}
       propertyPath: m_RootOrder
       value: 1

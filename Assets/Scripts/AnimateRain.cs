@@ -20,7 +20,10 @@ public class AnimateRain : MonoBehaviour
         SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>();
         material = new Material(spriteRenderer.material);
         spriteRenderer.material = material;
-        material.color = color;
+
+        Color fadedColor = color;
+        fadedColor.a = 0;
+        material.color = fadedColor;
     }
 
     private void Update()
