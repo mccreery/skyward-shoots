@@ -48,6 +48,7 @@ public class EnemySpawner : MonoBehaviour
         }
     }
 
+#if UNITY_EDITOR
     private void OnDrawGizmosSelected()
     {
         if (spawnAnchor != null)
@@ -59,6 +60,7 @@ public class EnemySpawner : MonoBehaviour
             Handles.DrawLine(new Vector2(spawnAnchor.position.x - 20, worldSpawnLine), new Vector2(spawnAnchor.position.x + 20, worldSpawnLine));
         }
     }
+#endif
 
     [Serializable]
     public struct Stop

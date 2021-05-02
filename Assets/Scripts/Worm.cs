@@ -69,6 +69,7 @@ public class Worm : MonoBehaviour
         }
     }
 
+#if UNITY_EDITOR
     private void OnDrawGizmosSelected()
     {
         if (anchor != null)
@@ -76,4 +77,5 @@ public class Worm : MonoBehaviour
             Handles.DrawWireDisc(anchor.position, Vector3.forward, radius);
         }
     }
+#endif
 }

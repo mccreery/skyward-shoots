@@ -15,8 +15,10 @@ public class Despawn : MonoBehaviour
         }
     }
 
+#if UNITY_EDITOR
     private void OnDrawGizmosSelected()
     {
         Handles.DrawLine(new Vector2(transform.position.x - 20, WorldDespawnLine), new Vector2(transform.position.x + 20, WorldDespawnLine));
     }
+#endif
 }
