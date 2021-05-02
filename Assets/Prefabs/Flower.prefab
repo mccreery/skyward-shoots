@@ -159,7 +159,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.875, y: 0.4375}
+  m_Size: {x: 1.25, y: 0.625}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -310,6 +310,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 087ebfb1f9cee1c4d9725a1210602c8c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  finalScoreText: {fileID: 0}
+  pausedText: {fileID: 0}
+  score: {fileID: 0}
+  playAgain: {fileID: 0}
+  mainMenu: {fileID: 0}
+  continueGame: {fileID: 0}
+  quitToMenu: {fileID: 0}
   head: {fileID: 4109549583317513286}
   seed: {fileID: 5405776915729586199}
   petalPrefab: {fileID: 6260209188918214604, guid: 717d5374f88864a48b7ff0ae04c59226, type: 3}
