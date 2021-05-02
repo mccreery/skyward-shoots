@@ -6,6 +6,8 @@ public class Flower : MonoBehaviour
 {
     public Text finalScoreText;
     public Score score;
+    public Button playAgain;
+    public Button mainMenu;
 
     public Transform head;
     public Transform seed;
@@ -55,6 +57,8 @@ public class Flower : MonoBehaviour
     private void Start()
     {
         finalScoreText.gameObject.SetActive(false);
+        playAgain.gameObject.SetActive(false);
+        mainMenu.gameObject.SetActive(false);
         life = numPetals;
         for (int i = 0; i < numPetals; i++)
         {
@@ -95,6 +99,8 @@ public class Flower : MonoBehaviour
     {
         finalScoreText.text = "Game Over!\nYour flower reached a height of:\n" + score.Altitude + "ft";
         finalScoreText.gameObject.SetActive(true);
+        playAgain.gameObject.SetActive(true);
+        mainMenu.gameObject.SetActive(true);
         Time.timeScale = 0;
     }
 
