@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.12731713, g: 0.13414736, b: 0.12107852, a: 1}
+  m_IndirectSpecularColor: {r: 0.12731749, g: 0.13414757, b: 0.1210787, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -14553,7 +14553,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1642511577}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 7}
+  m_LocalPosition: {x: 0, y: -177, z: 7}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children: []
   m_Father: {fileID: 148791689}
@@ -14572,9 +14572,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraStartPoint: 0
-  backgroundStartPoint: 65
+  backgroundStartPoint: 177
   cameraEndPoint: 500
-  backgroundEndPoint: -65
+  backgroundEndPoint: -177
 --- !u!114 &1688506373 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4376070572179795139, guid: fc81ef1af30a07a49ae9ada00862a99e, type: 3}
@@ -14672,6 +14672,10 @@ PrefabInstance:
       propertyPath: score
       value: 
       objectReference: {fileID: 508438191}
+    - target: {fileID: 4109549584855946856, guid: 2d3131a326515d84e91b19d71d6663f7, type: 3}
+      propertyPath: damage
+      value: 
+      objectReference: {fileID: 8300000, guid: 3ea3b264859613f4d9b7f8a0a7525fbd, type: 3}
     - target: {fileID: 4109549584855946856, guid: 2d3131a326515d84e91b19d71d6663f7, type: 3}
       propertyPath: mainMenu
       value: 

@@ -15,6 +15,8 @@ public class Flower : MonoBehaviour
     public AudioClip wateringCan;
     public AudioSource audioSource;
 
+    public AudioClip damage;
+
     public Transform head;
     public Transform seed;
 
@@ -23,6 +25,7 @@ public class Flower : MonoBehaviour
 
     public float losePetalRate = 0.5f;
     public float pickupAmount = 2.0f;
+    public float damageAmount = 1.0f;
 
     public float maxRadius = 2;
     public float minRadius = 1;
@@ -157,6 +160,12 @@ public class Flower : MonoBehaviour
 
             Raining = true;
             disableRainTime = Time.time + rainTime;
+        }
+
+        if (collision.CompareTag("Bee") || collision.CompareTag("Bird"))
+        {
+            audioSource.PlayOneShot(damage);
+            Life -= damageAmount;
         }
     }
 
