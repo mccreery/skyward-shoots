@@ -12,7 +12,8 @@ public class Bird : MonoBehaviour
     private void Update()
     {
         transform.position += (movingRight ? Vector3.right : Vector3.left) * speed * Time.deltaTime;
-        if (Mathf.Abs(transform.position.x - anchor.position.x) > sideDistance)
+
+        if (movingRight ? transform.position.x > anchor.position.x + sideDistance : transform.position.x < anchor.position.x - sideDistance)
         {
             movingRight = !movingRight;
         }
