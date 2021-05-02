@@ -30,7 +30,12 @@ public class Flower : MonoBehaviour
     public float maxRadius = 2;
     public float minRadius = 1;
 
-    public float speed = 1.0f;
+    private float speed;
+    public float minSpeed = 1f;
+    public float maxSpeed = 2f;
+
+    public float percentageLife;
+
     public Transform sun;
 
     public float Altitude => transform.position.y;
@@ -106,6 +111,9 @@ public class Flower : MonoBehaviour
 
     private void Update()
     {
+        percentageLife = life / numPetals;
+        speed = Mathf.Lerp(minSpeed, maxSpeed, percentageLife);
+
         Vector2 sunDirection = sun.position - transform.position;
         float radians = Mathf.Atan2(sunDirection.y, sunDirection.x);
 
@@ -118,15 +126,12 @@ public class Flower : MonoBehaviour
         head.gameObject.SetActive(AboveGround);
         seed.gameObject.SetActive(!AboveGround);
 
-        if (AboveGround)
+        if (life < 0)
         {
-            if (life < 0)
-            {
-                Die();
-                return;
-            }
-            Life -= losePetalRate * Time.deltaTime;
+            Die();
+            return;
         }
+        Life -= losePetalRate * Time.deltaTime;
 
         if (Input.GetKeyDown("escape"))
         {

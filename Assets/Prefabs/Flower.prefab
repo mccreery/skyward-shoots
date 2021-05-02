@@ -330,7 +330,9 @@ MonoBehaviour:
   damageAmount: 1
   maxRadius: 0.7
   minRadius: 0.3
-  speed: 5
+  minSpeed: 2.5
+  maxSpeed: 7.5
+  percentageLife: 0
   sun: {fileID: 0}
   iframeTime: 1
   sprites:
