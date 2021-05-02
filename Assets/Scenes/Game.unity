@@ -14640,6 +14640,16 @@ MonoBehaviour:
   stops:
   - height: -Infinity
     enemySet: {fileID: 11400000, guid: a13c98ce7cf89d848bb8c9e48a19c75f, type: 2}
+  - height: 0
+    enemySet: {fileID: 11400000, guid: 6c9afabe47b09204eb05f9ef3f6fdc29, type: 2}
+  - height: 100
+    enemySet: {fileID: 11400000, guid: 9372acf9fd849634999a68ff0459f4bf, type: 2}
+  - height: 200
+    enemySet: {fileID: 11400000, guid: 59d0240043fd343458fff5f60fdc5dd0, type: 2}
+  - height: 300
+    enemySet: {fileID: 11400000, guid: b4b798db0c36b3e4f8d89e3781928fee, type: 2}
+  - height: 400
+    enemySet: {fileID: 11400000, guid: 0a9cd6d8ec476df4dad0961e442fd8d1, type: 2}
 --- !u!224 &3106939699931156937
 RectTransform:
   m_ObjectHideFlags: 0

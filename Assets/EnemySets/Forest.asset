@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2323743780581144995275a9a5912e62, type: 3}
+  m_Name: Forest
+  m_EditorClassIdentifier: 
+  prefabs:
+  - {fileID: 156363077706728801, guid: 640777938e1dbb0469b9991d9a7c0ef4, type: 3}
+  - {fileID: 5870522860113522877, guid: 8c1eb07a36ac354449061ca9c672a07a, type: 3}
+  - {fileID: 5870522860113522877, guid: 8c1eb07a36ac354449061ca9c672a07a, type: 3}
