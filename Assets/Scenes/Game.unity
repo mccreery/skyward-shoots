@@ -136,6 +136,7 @@ GameObject:
   - component: {fileID: 148791687}
   - component: {fileID: 148791686}
   - component: {fileID: 148791690}
+  - component: {fileID: 148791691}
   m_Layer: 0
   m_Name: MainCamera
   m_TagString: MainCamera
@@ -262,6 +263,31 @@ PositionConstraint:
   m_Sources:
   - sourceTransform: {fileID: 1284491666}
     weight: 1
+--- !u!114 &148791691
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 148791685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f7cd595ac8591044b9cc1125ccd4536, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stops:
+  - height: -Infinity
+    music: {fileID: 8300000, guid: 961815bc5ec4d674b9ed9485d325df35, type: 3}
+  - height: 0
+    music: {fileID: 8300000, guid: 04fb480b837f8aa479f329bf62b41526, type: 3}
+  - height: 100
+    music: {fileID: 8300000, guid: d02c3a8f9a5101848adbd7289725e72c, type: 3}
+  - height: 200
+    music: {fileID: 8300000, guid: 1599994037191b94e82767a48f777eb0, type: 3}
+  - height: 300
+    music: {fileID: 8300000, guid: a6e74a2394c3e7f41b7c15084ddcc512, type: 3}
+  - height: 400
+    music: {fileID: 8300000, guid: 346fdb0163cd705468b4c708a2c72b41, type: 3}
 --- !u!1 &154101905
 GameObject:
   m_ObjectHideFlags: 0

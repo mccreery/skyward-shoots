@@ -17,16 +17,19 @@ public class MusicManager : MonoBehaviour
         get => track;
         set
         {
-            switchTime = Time.time;
-            track = value;
+            if (track != value)
+            {
+                switchTime = Time.time;
+                track = value;
 
-            AudioSource temp = activeSource;
-            activeSource = inactiveSource;
-            inactiveSource = temp;
+                AudioSource temp = activeSource;
+                activeSource = inactiveSource;
+                inactiveSource = temp;
 
-            activeSource.clip = value;
-            activeSource.timeSamples = inactiveSource.timeSamples;
-            activeSource.Play();
+                activeSource.clip = value;
+                activeSource.timeSamples = inactiveSource.timeSamples;
+                activeSource.Play();
+            }
         }
     }
 
