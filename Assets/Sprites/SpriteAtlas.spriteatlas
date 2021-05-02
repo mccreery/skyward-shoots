@@ -46,7 +46,8 @@ SpriteAtlas:
     - {fileID: 2800000, guid: 8de1fec13e470d24a800f5d994ec2f83, type: 3}
     - {fileID: 2800000, guid: 0b0ab0eb6e205de449013abd6d9a6ebf, type: 3}
     - {fileID: 2800000, guid: 4c9449361c79a9449a3bffc9e31b3cb3, type: 3}
-    totalSpriteSurfaceArea: 9826
+    - {fileID: 2800000, guid: c6fc3e3b5b96cbc40883344e485567ee, type: 3}
+    totalSpriteSurfaceArea: 83874
     bindAsDefault: 1
     isAtlasV2: 0
     cachedData: {fileID: 0}
@@ -57,7 +58,18 @@ SpriteAtlas:
   - {fileID: 6693218365338926740, guid: 8de1fec13e470d24a800f5d994ec2f83, type: 3}
   - {fileID: -8724185195775200312, guid: 8de1fec13e470d24a800f5d994ec2f83, type: 3}
   - {fileID: -5997317474316409295, guid: 8de1fec13e470d24a800f5d994ec2f83, type: 3}
-  - {fileID: 21300000, guid: 4c9449361c79a9449a3bffc9e31b3cb3, type: 3}
+  - {fileID: -5260235997648330841, guid: 4c9449361c79a9449a3bffc9e31b3cb3, type: 3}
+  - {fileID: 3088215013174724993, guid: 4c9449361c79a9449a3bffc9e31b3cb3, type: 3}
+  - {fileID: -7302643359093655801, guid: 4c9449361c79a9449a3bffc9e31b3cb3, type: 3}
+  - {fileID: 5257829688914787120, guid: 4c9449361c79a9449a3bffc9e31b3cb3, type: 3}
+  - {fileID: 1200535085910493761, guid: 4c9449361c79a9449a3bffc9e31b3cb3, type: 3}
+  - {fileID: -6583155732020471796, guid: 4c9449361c79a9449a3bffc9e31b3cb3, type: 3}
+  - {fileID: -7518524041257459519, guid: 4c9449361c79a9449a3bffc9e31b3cb3, type: 3}
+  - {fileID: -5064401156898091283, guid: 4c9449361c79a9449a3bffc9e31b3cb3, type: 3}
+  - {fileID: 4989585365729773904, guid: 4c9449361c79a9449a3bffc9e31b3cb3, type: 3}
+  - {fileID: 6683615111705859281, guid: c6fc3e3b5b96cbc40883344e485567ee, type: 3}
+  - {fileID: 2332470280317142563, guid: c6fc3e3b5b96cbc40883344e485567ee, type: 3}
+  - {fileID: 7745360055802708760, guid: c6fc3e3b5b96cbc40883344e485567ee, type: 3}
   - {fileID: 922424046108175333, guid: 0b0ab0eb6e205de449013abd6d9a6ebf, type: 3}
   - {fileID: -6925154376186504650, guid: 0b0ab0eb6e205de449013abd6d9a6ebf, type: 3}
   - {fileID: 2870286397712609369, guid: 0b0ab0eb6e205de449013abd6d9a6ebf, type: 3}
@@ -92,7 +104,18 @@ SpriteAtlas:
   - Watering-can
   - Sun
   - Center
-  - bird
+  - bird_7
+  - bird_6
+  - bird_5
+  - bird_4
+  - bird_3
+  - bird_2
+  - bird_1
+  - bird_0
+  - bird_8
+  - Bee_0
+  - Bee_1
+  - Bee_2
   - tiles_23
   - tiles_22
   - tiles_21

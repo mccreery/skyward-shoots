@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 3719589617046770299}
   - component: {fileID: 5026698871580225851}
   - component: {fileID: 8791117289868122990}
-  - component: {fileID: 3036852064474215073}
+  - component: {fileID: 5133542921838089148}
   m_Layer: 0
-  m_Name: Bird
+  m_Name: Bee
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -74,7 +74,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -5064401156898091283, guid: 4c9449361c79a9449a3bffc9e31b3cb3, type: 3}
+  m_Sprite: {fileID: 6683615111705859281, guid: c6fc3e3b5b96cbc40883344e485567ee, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -110,7 +110,7 @@ Animator:
   m_GameObject: {fileID: 3719589617046770296}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: f2a9e721a01da9644b14fc5d1ef773d9, type: 2}
+  m_Controller: {fileID: 9100000, guid: c0850ca49b26ea147895d63edf220141, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -119,8 +119,8 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!61 &3036852064474215073
-BoxCollider2D:
+--- !u!58 &5133542921838089148
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -132,16 +132,6 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.22}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 5, y: 6.25}
-    newSize: {x: 5, y: 6.25}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
+  m_Offset: {x: 0.12, y: 0}
   serializedVersion: 2
-  m_Size: {x: 3, y: 1.5}
-  m_EdgeRadius: 0
+  m_Radius: 0.8
