@@ -27,7 +27,7 @@ public class MusicManager : MonoBehaviour
                 inactiveSource = temp;
 
                 activeSource.clip = value;
-                activeSource.timeSamples = inactiveSource.timeSamples;
+                activeSource.timeSamples = inactiveSource.timeSamples % value.samples;
                 activeSource.Play();
             }
         }
