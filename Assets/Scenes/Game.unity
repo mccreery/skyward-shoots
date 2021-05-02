@@ -14523,6 +14523,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 851553420}
     - target: {fileID: 4109549584855946856, guid: 2d3131a326515d84e91b19d71d6663f7, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 4109549583724355580}
+    - target: {fileID: 4109549584855946856, guid: 2d3131a326515d84e91b19d71d6663f7, type: 3}
+      propertyPath: wateringCan
+      value: 
+      objectReference: {fileID: 8300000, guid: 6caf9f97d1467f74cb7c99afdcc1afdf, type: 3}
+    - target: {fileID: 4109549584855946856, guid: 2d3131a326515d84e91b19d71d6663f7, type: 3}
       propertyPath: continueGame
       value: 
       objectReference: {fileID: 1302333152}
@@ -14580,6 +14588,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2d3131a326515d84e91b19d71d6663f7, type: 3}
+--- !u!82 &4109549583724355580 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 5183106154215207785, guid: 2d3131a326515d84e91b19d71d6663f7, type: 3}
+  m_PrefabInstance: {fileID: 4109549583724355579}
+  m_PrefabAsset: {fileID: 0}
 --- !u!222 &4277356925810005287
 CanvasRenderer:
   m_ObjectHideFlags: 0

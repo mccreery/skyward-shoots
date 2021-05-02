@@ -12,6 +12,9 @@ public class Flower : MonoBehaviour
     public Button continueGame;
     public Button quitToMenu;
 
+    public AudioClip wateringCan;
+    public AudioSource audioSource;
+
     public Transform head;
     public Transform seed;
 
@@ -143,6 +146,7 @@ public class Flower : MonoBehaviour
     {
         if (collision.CompareTag("WateringCan"))
         {
+            audioSource.PlayOneShot(wateringCan);
             Life += pickupAmount;
             Destroy(collision.gameObject);
         }
