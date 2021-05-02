@@ -56,6 +56,7 @@ public class Flower : MonoBehaviour
 
     private void Start()
     {
+        Time.timeScale = 1;
         finalScoreText.gameObject.SetActive(false);
         playAgain.gameObject.SetActive(false);
         mainMenu.gameObject.SetActive(false);
