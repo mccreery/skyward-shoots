@@ -61,6 +61,14 @@ public class Worm : MonoBehaviour
         }
     }
 
+    private void OnDestroy()
+    {
+        foreach (GameObject collider in colliders)
+        {
+            Destroy(collider);
+        }
+    }
+
     private void OnDrawGizmosSelected()
     {
         Handles.DrawWireDisc(anchor.position, Vector3.forward, radius);

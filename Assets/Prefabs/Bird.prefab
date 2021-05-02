@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 3036852064474215073}
   - component: {fileID: 2166517521509865781}
   - component: {fileID: 3647139534074861690}
+  - component: {fileID: 6085756563267563806}
   m_Layer: 0
   m_Name: Bird
   m_TagString: Untagged
@@ -258,3 +259,16 @@ MonoBehaviour:
   intervalMean: 3
   intervalVariance: 1.5
   audioClip: {fileID: 8300000, guid: 98df760cab7debb468454efb9e426bab, type: 3}
+--- !u!114 &6085756563267563806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3719589617046770296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ca9619c980c7c14492ea16a3ee889ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  despawnLine: -15
