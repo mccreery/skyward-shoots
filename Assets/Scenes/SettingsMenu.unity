@@ -497,6 +497,10 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2878075923481621544, guid: 179ac7a25f59eff44a88de466c47df78, type: 3}
+      propertyPath: select
+      value: 
+      objectReference: {fileID: 8300000, guid: a6e1ce711b10c7142a262b0a489e6f32, type: 3}
     - target: {fileID: 4291452462105760196, guid: 179ac7a25f59eff44a88de466c47df78, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -592,4 +596,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fe78878ada30244d81cc27ba548d7cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  select: {fileID: 8300000, guid: a6e1ce711b10c7142a262b0a489e6f32, type: 3}
   sceneNumber: 4

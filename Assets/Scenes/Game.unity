@@ -46043,6 +46043,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fe78878ada30244d81cc27ba548d7cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  select: {fileID: 0}
   sceneNumber: 1
 --- !u!114 &851553420 stripped
 MonoBehaviour:
@@ -47372,6 +47373,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fe78878ada30244d81cc27ba548d7cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  select: {fileID: 8300000, guid: a6e1ce711b10c7142a262b0a489e6f32, type: 3}
   sceneNumber: 2
 --- !u!114 &6265150157977632184 stripped
 MonoBehaviour:
@@ -47560,6 +47562,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fe78878ada30244d81cc27ba548d7cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  select: {fileID: 8300000, guid: a6e1ce711b10c7142a262b0a489e6f32, type: 3}
   sceneNumber: 1
 --- !u!1001 &7922103232198538980
 PrefabInstance:
