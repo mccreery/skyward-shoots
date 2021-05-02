@@ -14467,10 +14467,10 @@ MonoBehaviour:
   queueArea:
     serializedVersion: 2
     x: -15
-    y: 15
+    y: 35
     width: 30
-    height: 15
-  spawnLine: 10
+    height: 10
+  spawnLine: 30
   enemySet: {fileID: 11400000, guid: a13c98ce7cf89d848bb8c9e48a19c75f, type: 2}
 --- !u!224 &3106939699931156937
 RectTransform:
