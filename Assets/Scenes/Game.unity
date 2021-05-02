@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.12731713, g: 0.13414736, b: 0.12107852, a: 1}
+  m_IndirectSpecularColor: {r: 0.12731749, g: 0.13414757, b: 0.1210787, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -47013,6 +47013,10 @@ PrefabInstance:
       propertyPath: continueGame
       value: 
       objectReference: {fileID: 1302333152}
+    - target: {fileID: 4109549584855946856, guid: 2d3131a326515d84e91b19d71d6663f7, type: 3}
+      propertyPath: losePetalRate
+      value: 0.25
+      objectReference: {fileID: 0}
     - target: {fileID: 4109549584855946856, guid: 2d3131a326515d84e91b19d71d6663f7, type: 3}
       propertyPath: finalScoreText
       value: 

@@ -47,7 +47,7 @@ SpriteAtlas:
     - {fileID: 2800000, guid: 0b0ab0eb6e205de449013abd6d9a6ebf, type: 3}
     - {fileID: 2800000, guid: 4c9449361c79a9449a3bffc9e31b3cb3, type: 3}
     - {fileID: 2800000, guid: c6fc3e3b5b96cbc40883344e485567ee, type: 3}
-    totalSpriteSurfaceArea: 83230
+    totalSpriteSurfaceArea: 83742
     bindAsDefault: 1
     isAtlasV2: 0
     cachedData: {fileID: 0}
@@ -84,7 +84,9 @@ SpriteAtlas:
   - {fileID: -4672163745296329812, guid: 0b0ab0eb6e205de449013abd6d9a6ebf, type: 3}
   - {fileID: -8305803365058092108, guid: 0b0ab0eb6e205de449013abd6d9a6ebf, type: 3}
   - {fileID: 5560954434011818755, guid: 0b0ab0eb6e205de449013abd6d9a6ebf, type: 3}
+  - {fileID: 61205593611490087, guid: 0b0ab0eb6e205de449013abd6d9a6ebf, type: 3}
   - {fileID: 4239528737361974724, guid: 0b0ab0eb6e205de449013abd6d9a6ebf, type: 3}
+  - {fileID: 7397035649948849851, guid: 0b0ab0eb6e205de449013abd6d9a6ebf, type: 3}
   - {fileID: 1639214462598301798, guid: 0b0ab0eb6e205de449013abd6d9a6ebf, type: 3}
   - {fileID: -6614373457484812694, guid: 0b0ab0eb6e205de449013abd6d9a6ebf, type: 3}
   - {fileID: 349823833441268365, guid: 0b0ab0eb6e205de449013abd6d9a6ebf, type: 3}
@@ -129,7 +131,9 @@ SpriteAtlas:
   - tiles_12
   - tiles_13
   - tiles_10
+  - tiles_29
   - tiles_11
+  - tiles_28
   - tiles_3
   - tiles_2
   - tiles_1

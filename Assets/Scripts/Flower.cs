@@ -74,6 +74,7 @@ public class Flower : MonoBehaviour
         }
         set
         {
+            value = Mathf.Clamp(value, -1, numPetals);
             life = value;
             for (int i = 0; i < petals.Count; i++)
             {
